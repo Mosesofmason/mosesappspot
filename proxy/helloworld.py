@@ -9,7 +9,7 @@ class MainPage(webapp.RequestHandler):
 
 def main():
   application = webapp.WSGIApplication(
-                                       [('/', MainPage)],
+                                       [('/proxy/', MainPage)],
                                        debug=True)
   wsgiref.handlers.CGIHandler().run(application)
 

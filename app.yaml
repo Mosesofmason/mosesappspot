@@ -4,9 +4,14 @@ runtime: python
 api_version: 1
 
 handlers:
+- url: /css
+  static_dir: css
 
-- url: /proxy/.*
-  script: proxy/main.py
+- url: /proxxxxy/.*
+  script: proxy/fetch.py
+
+- url: /fetch.py
+  script: fetch.py
 
 - url: /.*
   script: helloworld.py
