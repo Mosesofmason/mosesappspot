@@ -7,11 +7,11 @@ handlers:
 - url: /css
   static_dir: css
 
-- url: /proxxxxy/.*
+- url: /proxy/.*
   script: proxy/fetch.py
 
-- url: /fetch.py
-  script: fetch.py
+- url: /proxy/fetch.py
+  script: proxy/fetch.py
 
 - url: /.*
   script: helloworld.py
