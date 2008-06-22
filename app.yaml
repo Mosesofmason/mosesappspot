@@ -1,0 +1,12 @@
+application: moses
+version: 2
+runtime: python
+api_version: 1
+
+handlers:
+
+- url: /proxy/.*
+  script: proxy/main.py
+
+- url: /.*
+  script: helloworld.py
