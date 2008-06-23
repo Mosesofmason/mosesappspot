@@ -194,7 +194,7 @@ class MainHandler(webapp.RequestHandler):
 
 
 def main():
-    application = webapp.WSGIApplication([('/fetch.py', MainHandler)], debug=True)
+    application = webapp.WSGIApplication([('/proxy/fetch.py', MainHandler)], debug=True)
     wsgiref.handlers.CGIHandler().run(application)
 
 
